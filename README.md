@@ -11,7 +11,7 @@ Bundle with services to develop applications with express
 ```javascript
 {
     "dependencies": {
-        "dragonnodejs-express": "^1.0.0"
+        "dragonnodejs-express": "^1.0.1"
     }
 }
 ```
