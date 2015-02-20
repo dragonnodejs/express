@@ -1,0 +1,19 @@
+{
+    "name": "dragonnodejs-express",
+    "description": "Bundle with services to develop applications with express",
+    "version": "1.0.0",
+    "author": "Christoph Herrmann <developer@dragonprojects.de>",
+    "readmeFilename": "README.md",
+    "main": "bundle.js",
+    "dependencies": {
+        "cors": "^2.5.3",
+        "dragonnodejs": "^4.0.2",
+        "express": "^4.11.0",
+        "http-auth": "^2.2.5",
+        "underscore": "^1.7.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dragonnodejs/express.git"
+    }
+}
