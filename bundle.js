@@ -8,6 +8,7 @@ module.exports = function (config, _, services) {
     config = {
         libraries: {
             compression: require('compression'),
+            cors: require('cors'),
             express: require('express'),
             httpAuth: require('http-auth'),
             underscore: require('underscore')
