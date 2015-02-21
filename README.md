@@ -11,7 +11,7 @@ Bundle with services to develop applications with express
 ```javascript
 {
     "dependencies": {
-        "dragonnodejs-express": "^1.0.2"
+        "dragonnodejs-express": "^2.0.0"
     }
 }
 ```
@@ -26,13 +26,10 @@ var config = {
                     port: process.env.PORT
                 },
                 auth: {
-                    disabled: process.env.AUTH_DISABLED || !(process.env.AUTH_USER && process.env.AUTH_PASSWORD),
+                    disabled: process.env.AUTH_DISABLED,
                     realm: process.env.AUTH_REALM,
-                    users: function () {
-                        var users = {};
-                        users[process.env.AUTH_USER] = process.env.AUTH_PASSWORD;
-                        return users;
-                    }()
+                    user: process.env.AUTH_USER,
+                    password: process.env.AUTH_PASSWORD
                 },
                 cors: {},
                 header: {

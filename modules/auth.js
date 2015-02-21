@@ -5,13 +5,10 @@
  * Initialize basic http authentication for all http requests
  * @example
     auth: {
-        disabled: process.env.AUTH_DISABLED || !(process.env.AUTH_USER && process.env.AUTH_PASSWORD),
+        disabled: process.env.AUTH_DISABLED,
         realm: process.env.AUTH_REALM,
-        users: function () {
-            var users = {};
-            users[process.env.AUTH_USER] = process.env.AUTH_PASSWORD;
-            return users;
-        }()
+        user: process.env.AUTH_USER,
+        password: process.env.AUTH_PASSWORD
     }
  */
 
@@ -19,13 +16,13 @@ module.exports = function (config, libraries, services) {
     var app = services.app,
         httpAuth = libraries.httpAuth;
 
-    if (!config.disabled) {
+    if (!config.disabled && config.user && config.password) {
         var basic = httpAuth.basic(
             {
                 realm: config.realm || ''
             },
             function (user, password, callback) {
-                callback(config.users[user] && config.users[user] == password);
+                callback(user == config.user && password == config.password);
             }
         );
         app.use(httpAuth.connect(basic));
