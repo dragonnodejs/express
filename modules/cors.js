@@ -1,5 +1,4 @@
 "use strict";
-/*global module:false */
 
 /**
  * Enable CORS to allow all origins making requests to the application

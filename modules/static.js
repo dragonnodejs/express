@@ -1,5 +1,4 @@
 "use strict";
-/*global module:false */
 
 /**
  * Serves the static files with compression support

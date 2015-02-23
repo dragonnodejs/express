@@ -1,7 +1,6 @@
 "use strict";
-/*global module:false */
 
-/*
+/**
  * Initialize basic http authentication for all http requests
  * @example
     auth: {

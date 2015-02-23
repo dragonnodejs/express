@@ -1,7 +1,6 @@
 "use strict";
-/*global module:false */
 
-/*
+/**
  * Set or remove http headers for all http requests
  * @example
     header: {
