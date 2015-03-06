@@ -1,7 +1,7 @@
 {
     "name": "dragonnodejs-express",
     "description": "Bundle with services to develop applications with express",
-    "version": "2.0.1",
+    "version": "2.1.0",
     "author": "Christoph Herrmann <developer@dragonprojects.de>",
     "readmeFilename": "README.md",
     "main": "bundle.js",
