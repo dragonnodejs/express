@@ -6,7 +6,7 @@
     "readmeFilename": "README.md",
     "main": "bundle.js",
     "dependencies": {
-        "dragonnodejs": "^4.0.3",
+        "dragonnodejs": "^4.0.4",
         "compression": "^1.4.1",
         "cors": "^2.5.3",
         "express": "^4.11.0",
