@@ -6,7 +6,7 @@ Bundle with services to develop applications with express
 - Set or remove http headers for all http requests
 - Serves the static files with compression support
 
-# Installation
+## Installation
 - Add bundle to the "package.json":
 ```javascript
 {
