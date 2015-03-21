@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Enable CORS to allow all origins making requests to the application

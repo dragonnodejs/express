@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Set or remove http headers for all http requests

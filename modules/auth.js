@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 /**
  * Initialize basic http authentication for all http requests
