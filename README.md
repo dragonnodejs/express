@@ -47,3 +47,6 @@ var config = {
     }
 };
 ```
+
+## Production
+- Set environment variable "NODE_ENV" to "production" to enable express internal optimizations
