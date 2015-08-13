@@ -2,7 +2,8 @@
     "name": "dragonnodejs-express",
     "description": "Bundle with services to develop applications with express",
     "version": "2.1.1",
-    "author": "Christoph Herrmann <developer@dragonprojects.de>",
+    "homepage": "http://github.com/dragonnodejs/express",
+    "license": "MIT",
     "readmeFilename": "README.md",
     "main": "bundle.js",
     "dependencies": {
