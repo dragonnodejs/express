@@ -3,18 +3,7 @@
 /**
  * Set or remove http headers for all http requests
  * @example
-    // RestAPI:
-    ['modules/header', [
-        ['Cache-Control', 'no-store, no-cache, must-revalidate, proxy-revalidate'],
-        ['ETag', null],
-        ['Expires', '0'],
-        ['Pragma', 'no-cache'],
-        ['Surrogate-Control', 'no-store'],
-        ['X-Powered-By', null]
-    ]]
-
-    // Webserver:
-    ['modules/header', [
+    ['header', [
         ['X-Content-Type-Options', 'nosniff'],
         ['X-Download-Options', 'noopen'],
         ['X-Frame-Options', 'DENY'],

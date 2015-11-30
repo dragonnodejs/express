@@ -3,14 +3,14 @@
 /**
  * Express initialization and app service
  * @example
-    ['modules/app', { port: process.env.PORT }]
+    ['app', { listen: [process.env.PORT] }]
  */
 
 module.exports = (config, libraries, services) => {
     let express = libraries.express;
 
     let app = express();
-    app.listen(config.port);
+    app.listen.apply(app, config.listen);
 
     services.app = app;
 };

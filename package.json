@@ -1,15 +1,18 @@
 {
   "name": "dragonnodejs-express",
   "description": "Bundle with services to develop applications with express",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "homepage": "http://github.com/dragonnodejs/express",
   "license": "MIT",
   "readmeFilename": "README.md",
-  "main": "bundle.js",
+  "main": "bundle",
   "dependencies": {
-    "dragonnodejs": "^5.0.1",
+    "dragonnodejs": "^6.0.0",
+    "accept-language": "^2.0.16",
+    "compression": "^1.6.0",
     "express": "^4.13.3",
-    "http-auth": "^2.2.8"
+    "http-auth": "^2.2.8",
+    "swig": "^1.4.2"
   },
   "repository": {
     "type": "git",

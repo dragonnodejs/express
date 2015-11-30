@@ -1,15 +1,16 @@
 'use strict';
 
-// Bundle with services to develop applications with express
+// Load the libraries and run the modules for the bundle
 
 module.exports = (config, _, services) => {
-    config = {
-        libraries: {
-            express: require('express'),
-            httpAuth: require('http-auth')
-        },
-        directory: __dirname + '/',
-        modules: config
+    let directory = __dirname + '/modules/';
+    let libraries = {
+        acceptLanguage: require('accept-language'),
+        compression: require('compression'),
+        express: require('express'),
+        fs: require('fs'),
+        httpAuth: require('http-auth'),
+        swig: require('swig')
     };
-    require('dragonnodejs')(config, services);
+    require('dragonnodejs')(directory, config, libraries, services);
 };

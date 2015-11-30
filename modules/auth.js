@@ -3,7 +3,7 @@
 /**
  * Initialize basic http authentication for all http requests
  * @example
-    ['modules/auth', {
+    ['auth', {
         disabled: process.env.AUTH_DISABLED,
         users: process.env.AUTH_USERS,
         user: process.env.AUTH_USER,
